@@ -201,7 +201,7 @@ const dynamicCards = [
   dynamicCards.forEach((item) => {
     const element = createElement(
       "div",
-      "w-[387px] group h-[433px] duration-300 py-[30px] hover:text-black bg-[#F5F5F5] dark:bg-[#272727] rounded-2xl hover:bg-[#febe10] cursor-pointer",
+      "w-[387px] group h-[433px] duration-300 py-[30px] hover:text-black bg-[#F5F5F5] dark:bg-[#272727] rounded-2xl hover:bg-green-500 cursor-pointer",
       `
       
       <h1 class="font-semibold text-[24px] leading-[29px] mx-6">
