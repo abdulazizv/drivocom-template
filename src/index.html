@@ -224,55 +224,61 @@
     </header>
     <!-- Header ended -->
 
+    <!-- main  started -->
     <main>
+      <!-- intro section started -->
       <section class="intro">
-        <div class="container mx-auto w-[1200px]">
-          <div class="swiper mySwiper relative rounded-2xl mt-5">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="relative">
-                  <div class="absolute text-center w-[416px] ml-[392px] mt-[60px] z-10">
-                    <h1 class="text-3xl text-white font-bold">Compact cars</h1>
-                    <p class="text-white">
-                      Rent cars as you are comfortable and where you are comfortable.
-                    </p>
-                  </div>
-                  <div class="bgshadow rounded-2xl"></div>
-                  <img src="./img/Car.png" alt="img" class="rounded-2xl" />
+        <div class="container mx-auto max-w-[1200px]">
+          <div class="slider__wrapper relative">
+            <div
+              class="swiper mySwiper z-10 mt-5 relative rounded-2xl overflow-hidden"
+            >
+              <div class="swiper-wrapper">
+                <!-- dinamic content -->
+              </div>
+              <div
+                class="w-[84px] absolute bottom-10 right-10 z-10 flex items-center justify-between"
+              >
+                <div
+                  class="w-9 h-9 swiper__left rounded-full z-10 bg-white hover:bg-[#cbcaca] cursor-pointer flex items-center justify-center"
+                >
+                  <i class="bx bx-chevron-left text-xl text-black"></i>
+                </div>
+                <div
+                  class="w-9 h-9 swiper__right rounded-full z-10 bg-white hover:bg-[#cbcaca] cursor-pointer flex items-center justify-center"
+                >
+                  <i class="bx bx-chevron-right text-xl text-black"></i>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="relative">
-                  <div class="absolute text-center w-[416px] ml-[392px] mt-[60px] z-10">
-                    <h1 class="text-3xl text-white font-bold">Compact cars</h1>
-                    <p class="text-white">
-                      Rent cars as you are comfortable and where you are comfortable.
-                    </p>
-                  </div>
-                  <div class="bgshadow rounded-2xl"></div>
-                  <img src="./img/jeep.png" alt="img" class="rounded-2xl" />
-                </div>
+              <div
+                class="pagin flex justify-start items-start w-[100px] absolute left-10 bottom-[46px]"
+              >
+                <!-- dinamic -->
               </div>
-              <div class="swiper-slide">
-                <div class="relative">
-                  <div class="absolute text-center w-[416px] ml-[392px] mt-[60px] z-10">
-                    <h1 class="text-3xl text-white font-bold">Compact cars</h1>
-                    <p class="text-white">
-                      Rent cars as you are comfortable and where you are comfortable.
-                    </p>
-                  </div>
-                  <div class="bgshadow rounded-2xl"></div>
-                  <img src="./img/Rectangle 671.png" alt="img" class="rounded-2xl" />
-                </div>
-              </div>
-            
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div
+              class="absolute w-[600px] bg-white left-[300px] -bottom-[30px] z-50 rounded-full"
+            >
+              <div class="relative">
+                <input
+                  type="text"
+                  id="search"
+                  placeholder="Find the car of your dreams"
+                  class="focus:ring-2 dark:placeholder:text-[#555555] bg-transparent flex-grow text-[#000] focus:ring-[#299764] h-[66px] font-medium text-[18px] shadow-[0px_4px_10px_rgba(0,0,0,0.15)] leading-[22px] w-[600px] py-[18px] px-[30px] rounded-full outline-none"
+                />
+                <div
+                  class="icon w-[58px] hover:bg-[#077743] flex items-center justify-center text-2xl text-white cursor-pointer h-[58px] absolute top-1 right-1 rounded-full bg-[#299764]"
+                >
+                  <i class="bx bx-search-alt-2"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <!-- intro section finished -->
     </main>
+    <!-- main section finished  -->
   </body>
   <!-- utils -->
   <script src="./utils/utils.js"></script>
@@ -280,16 +286,31 @@
   <script src="./scripts/script.js"></script>
 
   <!-- swiper js -->
-  <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper -->
 <script>
   var swiper = new Swiper(".mySwiper", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+      navigation: {
+        nextEl: ".swiper__right",
+        prevEl: ".swiper__left",
+      },
+
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: true,
+      },
+      mousewheel: {
+        invert: true,
+      },
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+    });
 </script>
 </html>

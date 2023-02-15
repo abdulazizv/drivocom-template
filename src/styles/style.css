@@ -1,82 +1,45 @@
-#them {
-    appearance: none !important;
-    width: 26px;
-    height: 26px;
-    position: relative;
+.dropdown {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.login {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+.container {
+  margin: 0 auto !important;
+  max-width: 1200px;
+}
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+
+
+  background: #ffffff !important;
+  opacity: 0.5 !important;
+  border-radius: 100px !important;
 }
 
-#them::after {
-    content: '';
-    display: block;
-    width: 26px;
-    height: 26px;
-    background-image: url('../img/moon_light_version.svg');
-    background-size: cover;
-    /* background-color: ; */
-    background-position: center center;
-    position: absolute;
+.swiper-pagination-bullet-active {
+  width: 30px !important;
+  height: 8px !important;
+
+
+  background: #ffffff !important;
+  border-radius: 100px !important;
+  opacity: 1 !important;
+
+}
+.bg_linear {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.6) 6.19%,
+    rgba(0, 0, 0, 0) 54.63%
+  ) !important;
 }
 
-#them:checked::after {
-    content: '';
-    display: block;
-    width: 26px;
-    height: 26px;
-    background-image: url('../img/moon_dark_version.svg');
-    background-size: cover;
-    background-position: center center;
-    position: absolute;
-    /* background-color: lime; */
+.filter__buttons-active {
+  background-color: #299764 !important;
+  color: #fff;
 }
-.loader {
-    position: relative;
-    width: 100px;
-    height: 16px;
-  }
-  .loader:before , .loader:after{
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: #fff;
-    box-shadow: 32px 0 #fff;
-    left: 0;
-    top: 0;
-    animation: ballMoveX 2s linear infinite;
-  }
-  .loader:after {
-    box-shadow: none;
-    transform: translateX(64px) scale(1);
-    z-index: 2;
-    animation: none;
-    animation: trfLoader 2s linear infinite;
-  }
-  
-  @keyframes trfLoader {
-    0% , 5%{
-      transform: translateX(64px) scale(1);
-      background: #FFF;
-    }
-    10%{
-      transform: translateX(64px) scale(1);
-      background: #ff3d00;
-    }
-    40%{
-        transform: translateX(32px) scale(1.5);
-        background: #ff3d00;
-      }
-    90%, 95% {
-      transform: translateX(0px) scale(1);
-      background: #ff3d00;
-    }
-    100% {
-      transform: translateX(0px) scale(1);
-      background: #FFF;
-    }
-  }
-  @keyframes ballMoveX {
-    0% , 10%{  transform: translateX(0) }
-    90%, 100% { transform: translateX(32px) }
-  }
-        
+.filter__buttons-active:hover {
+  background-color: #077743 !important;
+}
