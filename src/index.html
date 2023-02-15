@@ -10,10 +10,44 @@
   <!-- box icon -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-  <title>Document</title>
+  <title>Drivo.com</title>
 </head>
 <body>
-  
+    <header>
+      <div class="container mx-auto">
+        <nav class="nav h-[70px] bg-red-700">
+          <div class="wrapper flex justify-between">
+            <a href="#"><img src="./img/Logo.svg" alt="logo"></a>
+            <ul class="list flex gap-x-6 justify-center items-center">
+              <li class="list--item text-2xl text-black font-semibold ml-3">Categories</li>
+             <li>
+              <select name="aboutus" id="aboutus">
+                <option value="about" disabled selected>About us</option>
+                <option value="news">News</option>
+                <option value="careers">Careers</option>
+                <option value="location">Locations</option>
+              </select>
+             </li>
+             <li>
+              <select name="help" id="helpcenter">
+                <option value="FAQ">FAQ</option>
+                <option value="contact">Contactus</option>
+              </select>
+             </li>
+             <li>
+              <span class="text-xl font-bold">+1 855 420 0000</span>
+             </li>
+             <li>
+              <a href="#" class="bg-[#F5F5F5] rounded-full py-2"><i class='bx bxs-moon py-2 px-2 text-xl text-[#555]'></i></a>
+             </li>
+             <li>
+              <button class="btn bg-green-600 flex gap-1 justify-center items-center  rounded-xl"><span class="text-white font-semibold text-lg py-2 px-5">Login</span> <img src="./img/icon-door.png" class="px-2" alt=""></button>
+             </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 </body>
 <!-- util script in Js -->
 <script src="./utils/utils.js"></script>
