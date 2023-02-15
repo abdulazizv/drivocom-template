@@ -125,7 +125,7 @@ cars.forEach((item) => {
   pagin.append(paginElem);
 });
 
-// ! filter button
+
 const filter__buttons = document.querySelector(".filter__buttons");
 filter__buttons.addEventListener("click", (e) => {
   if (e.target.classList.contains("fill-btn")) {
@@ -136,3 +136,108 @@ filter__buttons.addEventListener("click", (e) => {
     e.target.classList.add("filter__buttons-active");
   }
 }); 
+
+
+// do dynamic cards
+
+const dynamicCards = [
+    {
+      id: 1,
+      name: "Ford Fiesta",
+      type: "Economy Car",
+      img: "./img/ford.png",
+      seats: "5 Seats",
+      type_role: "Automatic",
+      fuel: "1-lit / 2.5 km",
+    },
+    {
+      id: 2,
+      name: "Nissan Versa",
+      type: "Compact Car",
+      img: "./img/nissan.png",
+      seats: "5 Seats",
+      type_role: "Automatic",
+      fuel: "1-lit / 2.5 km",
+    },
+    {
+      id: 3,
+      name: "Toyota Corolla",
+      type: "Mid-size Car",
+      img: "./img/toyota.png",
+      seats: "5 Seats",
+      type_role: "Automatic",
+      fuel: "1-lit / 2.5 km",
+    },
+    {
+      id: 4,
+      name: "Nissan Rogue",
+      type: "Mid-size SUV",
+      img: "./img/nissan rogue.png",
+      seats: "5 Seats",
+      type_role: "Automatic",
+      fuel: "1-lit / 2.5 km",
+    },
+    {
+      id: 5,
+      name: "Chevy Traverse",
+      type: "Full-size SUV ",
+      img: "./img/traverse.png",
+      seats: "5 Seats",
+      type_role: "Automatic",
+      fuel: "1-lit / 2.5 km",
+    },
+    {
+      id: 6,
+      name: "Nissan Altima",
+      type: "Full-size Car",
+      img: "./img/Nissan altima.png",
+      seats: "5 Seats",
+      type_role: "Automatic",
+      fuel: "1-lit / 2.5 km",
+    },
+  ];
+  const card_wrapper = document.querySelector(".car__cards");
+  
+  dynamicCards.forEach((item) => {
+    const element = createElement(
+      "div",
+      "w-[387px] group h-[433px] duration-300 py-[30px] hover:text-black bg-[#F5F5F5] dark:bg-[#272727] rounded-2xl hover:bg-[#febe10] cursor-pointer",
+      `
+      
+      <h1 class="font-semibold text-[24px] leading-[29px] mx-6">
+      ${item.name}
+    </h1>
+    <p
+      class="font-medium text-[#555555] dark:text-white duration-300 mt-2 group-hover:text-[#555555] text-[16px] leading-[20px] mx-6"
+    >
+    ${item.type}
+    </p>
+    <img src="${item.img}" class="mt-4" alt="car" />
+    <div
+      class="grid grid-cols-2 grid-rows-2 ml-[27px] mr-[89px] gap-6"
+    >
+      <div class="flex justify-start items-center">
+        <i class="bx bxs-user"></i>
+        <span class="ml-[13px]">${item.seats}</span>
+      </div>
+      <div class="flex justify-start items-center">
+        <div
+          class="bg-[url('./img/Vector.png')] dark:bg-[url('./img/Vector.png')] duration-300 group-hover:bg-[url('./img/Vector.png')] bg-center bg-cover w-3 h-3 inline-block"
+        ></div>
+        <span class="ml-[17px]">${item.type_role}</span>
+      </div>
+      <div class="flex justify-start items-center">
+        <div
+          class="bg-[url('./img/icon.png')] dark:bg-[url('./img/icon.png')] duration-300 group-hover:bg-[url('./img/icon.png')] bg-center bg-cover w-3 h-3 inline-block"
+        ></div>
+        <span class="ml-[13px]">${'21+ Years'}</span>
+      </div>
+      <div class="flex justify-start items-center">
+        <i class="bx bxs-droplet"></i>
+        <span class="ml-[13px]">${item.fuel}</span>
+      </div>
+    </div>
+      `
+    );
+    card_wrapper.append(element);
+  });
