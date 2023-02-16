@@ -16,12 +16,12 @@ if (
   document.documentElement.classList.add("dark");
   localStorage.theme = "dark";
   modeIcon.removeAttribute("src");
-  modeIcon.setAttribute("src", "./images/Iconsun.svg");
+  modeIcon.setAttribute("src", "./img/Moon.svg");
 } else {
   document.documentElement.classList.remove("dark");
   localStorage.theme = "light";
   modeIcon.removeAttribute("src");
-  modeIcon.setAttribute("src", "./images/Icon.svg");
+  modeIcon.setAttribute("src", "./img/Sun.png");
 }
 
 //  Whenever the user explicitly chooses light mode
@@ -32,12 +32,12 @@ mode.addEventListener("click", (e) => {
     document.documentElement.classList.remove("dark");
     localStorage.theme = "light";
     modeIcon.removeAttribute("src");
-    modeIcon.setAttribute("src", "./images/Icon.svg");
+    modeIcon.setAttribute("src", "./img/Moon.svg");
   } else {
     document.documentElement.classList.add("dark");
     localStorage.theme = "dark";
     modeIcon.removeAttribute("src");
-    modeIcon.setAttribute("src", "./images/Iconsun.svg");
+    modeIcon.setAttribute("src", "./img/Sun.png");
   }
 });
 
