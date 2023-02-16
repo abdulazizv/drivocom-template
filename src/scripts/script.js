@@ -16,12 +16,12 @@ if (
   document.documentElement.classList.add("dark");
   localStorage.theme = "dark";
   modeIcon.removeAttribute("src");
-  modeIcon.setAttribute("src", "./img/Moon.svg");
+  modeIcon.setAttribute("src", "./img/Sun.png");
 } else {
   document.documentElement.classList.remove("dark");
   localStorage.theme = "light";
   modeIcon.removeAttribute("src");
-  modeIcon.setAttribute("src", "./img/Sun.png");
+  modeIcon.setAttribute("src", "./img/Moon.png");
 }
 
 //  Whenever the user explicitly chooses light mode
@@ -45,6 +45,8 @@ mode.addEventListener("click", (e) => {
 loginBtn.addEventListener("click", (e) => {
   login.classList.remove("hidden");
   login.classList.add("z-20");
+  login.classList.add("fixed");
+  login.classList.add("backdrop-blur")
   login.classList.add("flex");
 });
 
