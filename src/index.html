@@ -31,7 +31,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-['Montserrat'] bg-white dark:bg-[#1C1C1C] dark:text-white">
+  <body class="font-['Montserrat'] bg-white dark:bg-[#1C1C1C] dark:text-white ">
     <!-- Header started-->
     <header
       class="h-[94px] border-b-[1.5px] border-[#E5E7EA] flex justify-center items-center"
@@ -417,25 +417,38 @@
             <div class="services mt-10 flex flex-row gap-x-12">
               <div class="wrapper__first flex flex-col gap-y-5">
                 <div
-                  class="booking__service bg-[#F5F5F5] w-[580px] hover:bg-green-500 flex flex-row justify-around px-8 py-10 rounded-2xl"
+                  class="booking__service bg-[#F5F5F5] w-[580px] hover:bg-green-500 duration-300 flex flex-row justify-around px-8 py-10 rounded-2xl"
                 >
                   <div class="text">
                     <h1
-                      class="w-[211px] h-[78px] font-normal text-2xl text-[#000]"
+                      class="w-[211px] h-[78px] font-normal text-2xl text-[#000] group-hover:text-white"
                     >
                       Book online,pay Online
                     </h1>
-                    <p class="w-[354px] h-[48px] text-[#555555]">
+                    <p class="w-[354px] h-[48px] text-[#555555] hover:text-white">
                       Complete the booking process A-Z, with our easy online
                       system
                     </p>
                   </div>
                   <div class="photo">
-                    <img src="./img/Desktop.png" alt="desktop" />
+                    <svg
+                      width="60"
+                      height="60"
+                      viewBox="0 0 60 60"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M30 9.37427L48.184 9.8884C51.3971 9.97925 54.0546 12.4184 54.42 15.6119C55.2288 22.6809 55.2288 29.8191 54.42 36.8882C54.0546 40.0817 51.3971 42.5208 48.184 42.6116L33.125 43.0374V48.125H42.5C43.5355 48.125 44.375 48.9645 44.375 50C44.375 51.0356 43.5355 51.875 42.5 51.875H17.5C16.4645 51.875 15.625 51.0356 15.625 50C15.625 48.9645 16.4645 48.125 17.5 48.125H26.875V43.0374L11.8159 42.6116C8.60284 42.5208 5.9453 40.0817 5.57991 36.8882C4.77109 29.8191 4.77109 22.6809 5.57991 15.6119C5.9453 12.4184 8.60284 9.97925 11.8159 9.8884L30 9.37427ZM12.5 34.375C11.4645 34.375 10.625 35.2145 10.625 36.25C10.625 37.2856 11.4645 38.125 12.5 38.125H47.5C48.5355 38.125 49.375 37.2856 49.375 36.25C49.375 35.2145 48.5355 34.375 47.5 34.375H12.5Z"
+                        fill="#299764"
+                      />
+                    </svg>
                   </div>
                 </div>
                 <div
-                  class="unparalleled__service bg-[#F5F5F5] w-[580px] hover:bg-green-500 flex flex-row justify-around px-8 py-10 rounded-2xl"
+                  class="unparalleled__service bg-[#F5F5F5] w-[580px] hover:bg-green-500 duration-300 flex flex-row justify-around px-8 py-10 rounded-2xl"
                 >
                   <div class="text">
                     <h1
@@ -449,13 +462,18 @@
                     </p>
                   </div>
                   <div class="photo">
-                    <img src="./img/User-clock.png" alt="user__clock" />
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M25 9.375C19.8223 9.375 15.625 13.5723 15.625 18.75C15.625 23.9277 19.8223 28.125 25 28.125C30.1777 28.125 34.375 23.9277 34.375 18.75C34.375 13.5723 30.1777 9.375 25 9.375Z" fill="#299764"/>
+                      <path d="M15 33.125C9.82233 33.125 5.625 37.3223 5.625 42.5V45.4707C5.625 47.3538 6.98971 48.9594 8.84818 49.2628C14.375 50.1651 19.9585 50.6013 25.5402 50.5712C25.9305 50.5691 26.1665 50.1374 25.9756 49.797C24.5582 47.2694 23.75 44.3541 23.75 41.25C23.75 39.2823 24.0748 37.3904 24.6736 35.6251C24.7861 35.2933 24.5454 34.9406 24.1954 34.9251C22.5658 34.8527 20.9436 34.5602 19.374 34.0476L17.2102 33.3411C16.7717 33.1979 16.3134 33.125 15.8522 33.125H15Z" fill="#299764"/>
+                      <path d="M43.125 37.5C43.125 36.4645 42.2855 35.625 41.25 35.625C40.2145 35.625 39.375 36.4645 39.375 37.5V41.9318C39.375 42.5317 39.662 43.0954 40.1472 43.4482L42.6472 45.2664C43.4847 45.8755 44.6573 45.6903 45.2664 44.8528C45.8755 44.0153 45.6903 42.8427 44.8528 42.2336L43.125 40.977V37.5Z" fill="#299764"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M41.25 55C48.8439 55 55 48.8439 55 41.25C55 33.6561 48.8439 27.5 41.25 27.5C33.6561 27.5 27.5 33.6561 27.5 41.25C27.5 48.8439 33.6561 55 41.25 55ZM41.25 51.25C46.7728 51.25 51.25 46.7728 51.25 41.25C51.25 35.7272 46.7728 31.25 41.25 31.25C35.7272 31.25 31.25 35.7272 31.25 41.25C31.25 46.7728 35.7272 51.25 41.25 51.25Z" fill="#299764"/>
+                      </svg>
                   </div>
                 </div>
               </div>
               <div class="wrapper__second flex flex-col gap-y-5">
                 <div
-                  class="guaranted__service bg-[#F5F5F5] w-[580px] hover:bg-green-500 flex flex-row justify-around px-8 py-10 rounded-2xl"
+                  class="guaranted__service bg-[#F5F5F5] w-[580px] hover:bg-green-500 duration-300 flex flex-row justify-around px-8 py-10 rounded-2xl"
                 >
                   <div class="text">
                     <h1
@@ -469,11 +487,14 @@
                     </p>
                   </div>
                   <div class="photo">
-                    <img src="./img/Shield.png" alt="desktop" />
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M32.9017 11.0177C31.1165 9.94276 28.8835 9.94276 27.0983 11.0177L25.8076 11.7949C22.6757 13.6807 19.1598 14.838 15.5201 15.1809L14.7069 15.2575C13.1017 15.4087 11.875 16.7564 11.875 18.3687V22.4784C11.875 29.425 14.6952 36.0739 19.6896 40.9021L27.828 48.7696C29.0393 49.9405 30.9607 49.9405 32.172 48.7696L40.3104 40.9021C45.3048 36.0739 48.125 29.425 48.125 22.4784V18.3687C48.125 16.7564 46.8984 15.4087 45.2931 15.2575L44.4799 15.1809C40.8402 14.838 37.3243 13.6807 34.1924 11.7949L32.9017 11.0177Z" fill="#299764"/>
+                      </svg>
+                      
                   </div>
                 </div>
                 <div
-                  class="wallet__service bg-[#F5F5F5] w-[580px] hover:bg-green-500 flex flex-row justify-around px-8 py-10 rounded-2xl"
+                  class="wallet__service bg-[#F5F5F5] w-[580px] hover:bg-green-500 duration-300 flex flex-row justify-around px-8 py-10 rounded-2xl"
                 >
                   <div class="text">
                     <h1
@@ -487,7 +508,12 @@
                     </p>
                   </div>
                   <div class="photo">
-                    <img src="./img/Wallet.png" alt="user__clock" />
+                    <!-- <img src="./img/Wallet.png" alt="user__clock" /> -->
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M52.5254 25.4283L52.5319 34.4855C52.4681 35.3483 52.3859 36.2102 52.2853 37.0704C52.1171 38.5089 50.9477 39.6693 49.4792 39.8334C44.8798 40.3474 40.1203 40.3474 35.5209 39.8334C34.0524 39.6693 32.883 38.5089 32.7147 37.0704C32.1653 32.3729 32.1653 27.6273 32.7147 22.9298C32.883 21.4913 34.0524 20.3309 35.5209 20.1668C40.1203 19.6527 44.8798 19.6527 49.4792 20.1668C50.9477 20.3309 52.1171 21.4913 52.2853 22.9298C52.3826 23.7613 52.4626 24.5943 52.5254 25.4283ZM42.5 26.2501C40.429 26.2501 38.75 27.929 38.75 30.0001C38.75 32.0712 40.429 33.7501 42.5 33.7501C44.5711 33.7501 46.25 32.0712 46.25 30.0001C46.25 27.929 44.5711 26.2501 42.5 26.2501Z" fill="#299764"/>
+                      <path d="M51.009 15.0994C51.3977 15.7725 50.6682 16.5263 49.8957 16.44C45.0195 15.895 39.9805 15.895 35.1043 16.44C31.931 16.7947 29.3645 19.2935 28.9901 22.4942C28.4069 27.4811 28.4069 32.5191 28.9901 37.506C29.3645 40.7067 31.931 43.2055 35.1043 43.5602C39.9806 44.1052 45.0195 44.1052 49.8957 43.5602C50.6733 43.4733 51.4088 44.2323 51.0164 44.9092C49.0699 48.2663 45.5996 50.6093 41.5671 51.0336L39.9374 51.2051C31.6603 52.0761 23.3117 52.0187 15.0473 51.0339L13.9674 50.9052C9.51212 50.3743 5.982 46.8934 5.38857 42.446C4.28633 34.1853 4.28633 25.8149 5.38857 17.5542C5.982 13.1068 9.51212 9.62592 13.9674 9.095L15.0473 8.96633C23.3117 7.98151 31.6603 7.92407 39.9374 8.79508L41.5671 8.96657C45.603 9.39128 49.0678 11.7378 51.009 15.0994Z" fill="#299764"/>
+                      </svg>
+                      
                   </div>
                 </div>
               </div>
@@ -499,27 +525,118 @@
 
       <!-- about us section started -->
       <section class="aboutus">
-        <div class="container mx-auto max-w-[1200px]">
-          <div class="wrapper border border-spacing-2 border-black mb-52">
-            <div class="wrapper__info w-[590px] pt-10 pl-8 pb-[94px] gap-1">
-              <h1 class="text-[#000000] font-bold text-3xl">
+        <div class="container mx-auto max-w-[1240px] px-5">
+          <div
+            class="about_us__container flex border-[1.5px] border-[#E5E7EA] rounded-[20px] mb-40"
+          >
+            <div class="about__info pl-8">
+              <h1 class="font-semibold text-4xl leading-[44px] mt-10">
                 Car rental keeps you safe
               </h1>
-              <p class="text-lg">
+              <p
+                class="w-[590px] mt-[10px] font-normal text-[#555555] dark:text-white text-[16px] leading-[24px]"
+              >
                 The safety of our employees and renters is our number one
                 priority. In addition to being confident your vehicle is cleaned
                 and sanitized every time you rent, you can also feel confident
                 that we will take every opportunity to enhance the health and
                 safety measures currently practiced in our operations.
               </p>
-            </div>
-            <div class="wrapper__elements">
-              <div class="cleaner bg-[#F5F5F5] w-[200px] h-[160px] flex flex-col gap-y-4 ml-8  px-3">
-                <div class="cleaner__img flex justify-end ">
-                  <img src="./img/Flask-alt.png" alt="flas-alt">
+              <div class="flex gap-[10px] mt-[94px]">
+                <div
+                  class="w-[200px] cursor-pointer h-40 group duration-300 hover:bg-[#299764] relative rounded-[16px] p-[15px] bg-[#F5F5F5] dark:bg-[#272727] flex items-end"
+                >
+                  <p
+                    class="font-medium duration-300 group-hover:text-white text-[16px] leading-[22px] w-[170px]"
+                  >
+                    Every car is thoroughly sanitized and cleaned
+                  </p>
+                  <svg
+                    class="absolute duration-300 top-6 right-6"
+                    width="18"
+                    height="25"
+                    viewBox="0 0 18 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.1184 0.0625167L12.1127 0.0625H5.88723L5.88158 0.0625167H4.625C4.10723 0.0625167 3.6875 0.48225 3.6875 1.00002C3.6875 1.51778 4.10723 1.93752 4.625 1.93752H4.94973V8.2639C-0.614905 10.8944 -1.4188 18.5649 3.58274 22.2744L3.95149 22.5479C6.94983 24.7717 11.0501 24.7717 14.0485 22.5479L14.4172 22.2744C19.4188 18.5649 18.6149 10.8944 13.0502 8.2639V1.93752H13.375C13.8928 1.93752 14.3125 1.51778 14.3125 1.00002C14.3125 0.48225 13.8928 0.0625167 13.375 0.0625167H12.1184ZM3.87107 11.3125H14.1289C13.5636 10.7185 12.8637 10.2197 12.0345 9.86218C11.513 9.63735 11.1752 9.1239 11.1752 8.55604V1.93752H6.82473V8.55604C6.82473 9.1239 6.48696 9.63735 5.9655 9.86218C5.13629 10.2197 4.43636 10.7185 3.87107 11.3125ZM6.5 17.25C5.80964 17.25 5.25 17.8097 5.25 18.5C5.25 19.1904 5.80964 19.75 6.5 19.75C7.19036 19.75 7.75 19.1904 7.75 18.5C7.75 17.8097 7.19036 17.25 6.5 17.25ZM9 16C9 15.3097 9.55964 14.75 10.25 14.75C10.9404 14.75 11.5 15.3097 11.5 16C11.5 16.6904 10.9404 17.25 10.25 17.25C9.55964 17.25 9 16.6904 9 16Z"
+                      fill="black"
+                      class="dark:fill-white duration-300 group-hover:fill-white"
+                    />
+                  </svg>
                 </div>
-                <p class="text-[#000] font-semibold text-lg">Every car is thoroughly sanitized and cleaned</p>
+                <div
+                  class="w-[200px] cursor-pointer h-40 group duration-300 hover:bg-[#299764] relative rounded-[16px] p-[15px] bg-[#F5F5F5] dark:bg-[#272727] flex items-end"
+                >
+                  <p
+                    class="font-medium duration-300 group-hover:text-white text-[16px] leading-[22px] w-[170px]"
+                  >
+                    All of our employees wear masks
+                  </p>
+                  <svg
+                    class="absolute duration-300 top-6 right-6"
+                    width="26"
+                    height="19"
+                    viewBox="0 0 26 19"
+                    fill="black"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.25 0.5625C3.77393 0.5625 0.8125 3.16163 0.8125 6.53724C0.8125 8.86594 1.90293 10.8265 3.34811 12.4505C4.78833 14.069 6.64643 15.4275 8.32622 16.5645L11.2245 18.5264C11.5419 18.7412 11.9581 18.7412 12.2755 18.5264L15.1738 16.5646C15.7109 16.201 16.2663 15.8147 16.8204 15.4046C16.9653 15.2973 17.0115 15.1015 16.9315 14.9399L15.2279 11.501C15.1475 11.3386 14.9264 11.3131 14.8111 11.4529L14.7201 11.5632C14.2452 12.1388 13.5379 12.4722 12.7917 12.4722H10.5C9.11929 12.4722 8 11.3529 8 9.97222C8 8.59151 9.11929 7.47222 10.5 7.47222H11.3775C11.5268 7.47222 11.6682 7.40554 11.7632 7.29041L13.7278 4.90904C14.2757 4.24495 15.1267 3.90948 15.9804 4.0211C16.834 4.13272 17.5702 4.67572 17.9289 5.45836L18.9323 7.64757C19.0376 7.87723 19.3368 7.93846 19.5551 7.81129C19.9266 7.59488 20.3572 7.47222 20.8125 7.47222H22.298C22.4868 7.47222 22.6472 7.332 22.6626 7.14389C22.679 6.94451 22.6875 6.74231 22.6875 6.53724C22.6875 3.16163 19.7261 0.5625 16.25 0.5625C14.4582 0.5625 12.8814 1.40267 11.75 2.48979C10.6186 1.40267 9.04184 0.5625 7.25 0.5625Z"
+                      fill="black"
+                      class="dark:fill-white duration-300 group-hover:fill-white"
+                    />
+                    <path
+                      d="M16.5085 6.10939C16.374 5.8159 16.0979 5.61227 15.7778 5.57041C15.4577 5.52855 15.1385 5.65436 14.9331 5.90339L12.3497 9.03472H10.5C9.98223 9.03472 9.5625 9.45445 9.5625 9.97222C9.5625 10.49 9.98223 10.9097 10.5 10.9097H12.7917C13.0715 10.9097 13.3367 10.7847 13.5148 10.5688L15.4273 8.25063L17.6686 13.1406C17.8031 13.4341 18.0792 13.6377 18.3993 13.6796C18.7194 13.7214 19.0385 13.5956 19.244 13.3466L21.2544 10.9097H24.25C24.7678 10.9097 25.1875 10.49 25.1875 9.97222C25.1875 9.45445 24.7678 9.03472 24.25 9.03472H20.8125C20.5326 9.03472 20.2674 9.15974 20.0893 9.37561L18.7497 10.9994L16.5085 6.10939Z"
+                      fill="black"
+                      class="dark:fill-white duration-300 group-hover:fill-white"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="w-[200px] cursor-pointer h-40 group duration-300 hover:bg-[#299764] relative rounded-[16px] p-[15px] bg-[#F5F5F5] dark:bg-[#272727] flex items-end"
+                >
+                  <p
+                    class="font-medium duration-300 group-hover:text-white text-[16px] leading-[22px] w-[170px]"
+                  >
+                    We stay up to date with all protocol from the CDC
+                  </p>
+                  <svg
+                    class="absolute duration-300 top-6 right-6"
+                    width="26"
+                    height="20"
+                    viewBox="0 0 26 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.125 7.0625C18.5344 7.0625 17.1606 8.17506 16.83 9.73088L16.8022 9.86139C16.7173 10.261 16.7024 10.6724 16.758 11.0771L16.9493 12.468C16.8778 12.4766 16.8064 12.4856 16.735 12.4949C15.6354 12.6377 14.8125 13.5744 14.8125 14.6832V17.5668C14.8125 18.6757 15.6354 19.6123 16.735 19.7551C18.9855 20.0474 21.2644 20.0474 23.515 19.7551C24.6146 19.6123 25.4375 18.6757 25.4375 17.5668V14.6832C25.4375 13.5744 24.6146 12.6377 23.515 12.4949C23.4436 12.4856 23.3722 12.4766 23.3007 12.468L23.4919 11.0771C23.5476 10.6724 23.5326 10.261 23.4477 9.86139L23.42 9.73088C23.0894 8.17506 21.7155 7.0625 20.125 7.0625ZM21.43 12.3081L21.6344 10.8217C21.6605 10.6318 21.6535 10.4387 21.6137 10.2511L21.5859 10.1206C21.4393 9.43079 20.8302 8.9375 20.125 8.9375C19.4197 8.9375 18.8106 9.43079 18.664 10.1206L18.6363 10.2511C18.5964 10.4387 18.5894 10.6318 18.6155 10.8217L18.8199 12.3081C19.6894 12.2649 20.5605 12.2649 21.43 12.3081Z"
+                      fill="black"
+                      class="dark:fill-white duration-300 group-hover:fill-white"
+                    />
+                    <path
+                      d="M22.8646 5.47618C22.8966 5.68614 22.6637 5.83784 22.4738 5.74263C21.7628 5.38602 20.9632 5.1875 20.125 5.1875C17.6491 5.1875 15.5106 6.91932 14.9959 9.34115L14.9682 9.47165C14.8693 9.93716 14.8324 10.413 14.8579 10.887C14.8684 11.0807 14.7771 11.2664 14.6202 11.3805C13.5937 12.1271 12.9375 13.3365 12.9375 14.6832V16.4567C12.9375 16.6622 12.772 16.8296 12.5664 16.8309C10.2297 16.8455 7.89257 16.7694 5.56031 16.6026L3.6678 16.4672C2.45716 16.3806 1.45861 15.4856 1.24045 14.2916C0.705887 11.3659 0.61437 8.37641 0.968973 5.42346L1.30958 2.58707C1.474 1.2179 2.63553 0.1875 4.01453 0.1875H6.87899C8.1194 0.1875 9.12495 1.19305 9.12495 2.43346C9.12495 2.47443 9.15816 2.50765 9.19914 2.50765H20.0902C21.416 2.50765 22.5453 3.47099 22.7543 4.78021L22.8343 5.282C22.8447 5.3467 22.8548 5.41143 22.8646 5.47618Z"
+                      fill="black"
+                      class="dark:fill-white duration-300 group-hover:fill-white"
+                    />
+                  </svg>
+                </div>
               </div>
+            </div>
+            <div class="safety__img relative mt-[30px] ml-[92px]">
+              <div
+                class="h-[300px] w-[300px] bg-[#299764] rounded-full absolute top-0 -z-10 left-[40px]"
+              ></div>
+              <img
+                src="./img/man.png"
+                alt="service repair"
+                class="w-[382px] h-[452px] z-10 mt-5"
+              />
             </div>
           </div>
         </div>

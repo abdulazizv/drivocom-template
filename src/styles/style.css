@@ -88,3 +88,20 @@
 .active-scroll {
   opacity: 1 !important;
 }
+
+
+.booking__service:hover svg > path {
+  fill:white;
+}
+
+.unparalleled__service:hover svg > path {
+  fill:white;
+}
+
+.guaranted__service:hover svg > path {
+  fill:white;
+}
+
+.wallet__service:hover svg > path {
+  fill:white;
+}
