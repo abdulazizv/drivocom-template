@@ -20,9 +20,9 @@
 
     <!-- swiper js usage link -->
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,199 +30,194 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Work+Sans:wght@700&display=swap"
       rel="stylesheet"
     />
-
   </head>
   <body class="font-['Montserrat'] bg-white dark:bg-[#1C1C1C] dark:text-white">
     <!-- Header started-->
     <header
-    class="h-[94px] border-b-[1.5px] border-[#E5E7EA] flex justify-center items-center"
-  >
-    <div class="container mx-auto max-w-[1240px] px-5">
-      <nav class="nav flex items-center">
-        <img src="./img/Logo.svg" alt="logo" class="cursor-pointer" />
-        <ul class="nav__list flex items-center ml-5 z-40">
-          <li
-            class="nav__list-item flex px-4 py-[18px] dark:hover:bg-[#272727] cursor-pointer hover:bg-[#F5F5F5] hover:rounded-full duration-300"
-          >
-            <a
-              href="#"
-              class="text-[18px] w-full h-full leading-[22px] font-medium"
-              >Categories</a
-            >
-          </li>
-          <li
-            class="nav__list-item group relative px-4 py-[18px] w-[147px] flex items-center justify-around cursor-pointer dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-full duration-300"
-          >
-            <a
-              href="#"
-              class="text-[18px] w-full h-full leading-[22px] font-medium"
-              >About Us</a
-            >
-            <i
-              class="bx bx-chevron-down text-xl group-hover:bx-chevron-up"
-            ></i>
-            <div
-              class="absolute hidden group-hover:block top-0 pt-[70px] left-0"
-            >
-              <ul
-                class="dropdown z-20 bg-white w-[147px] p-[10px] duration-300 backdrop:blur-md dark:bg-[#1C1C1C] rounded-[20px] dark:shadow-white dark:shadow-sm"
-              >
-                <li
-                  class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
-                >
-                  <a href="#" class="w-full h-full"> News </a>
-                </li>
-                <li
-                  class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
-                >
-                  <a href="#" class="w-full h-full"> Careers </a>
-                </li>
-                <li
-                  class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
-                >
-                  <a href="#" class="w-full h-full"> Locations </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li
-            class="nav__list-item relative group flex items-center justify-around px-4 py-[18px] cursor-pointer w-[169px] dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-full duration-300"
-          >
-            <a
-              href="#"
-              class="text-[18px] leading-[22px] font-medium w-full h-full"
-            >
-              Help center
-            </a>
-            <i class="bx bx-chevron-down text-xl"></i>
-            <div
-              class="absolute hidden group-hover:block top-0 pt-[70px] left-0"
-            >
-              <ul
-                class="dropdown bg-white w-[169px] p-[10px] duration-300 backdrop:blur-md dark:bg-[#1C1C1C] rounded-[20px] dark:shadow-white dark:shadow-sm"
-              >
-                <li
-                  class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
-                >
-                  <a href="#" class="w-full h-full"> FAQ </a>
-                </li>
-                <li
-                  class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
-                >
-                  <a href="#" class="w-full h-full"> Contact us </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-        <h1
-          class="inline-block cursor-pointer text-[18px] leading-[22px] font-semibold ml-[196px] duration-300"
-        >
-          +1 855 420 0000
-        </h1>
-        <div
-          class="mode dark:bg-[#272727] p-[21px] ml-6 bg-[#F5F5F5] dark:hover:bg-[#636161] hover:bg-[#e2dfdf] duration-300 cursor-pointer rounded-full flex justify-center items-center"
-        >
-          <img
-            id="mode-icon"
-            src="./img/Moon.svg"
-            class="w-4 h-4"
-            alt="dark-logo"
-          />
-        </div>
-        <div
-          id="btn-login"
-          class="group btn bg-[#299764] cursor-pointer w-[142px] h-[58px] rounded-full hover:bg-[#077743] active:bg-[#F5F5F5] flex justify-center items-center ml-4"
-        >
-          <h1
-            class="group-active:text-black text-white inline-block text-[18px] leading-[22px] font-medium"
-          >
-            Login
-          </h1>
-          <img
-            src="./img/icon-door.png"
-            alt="exit-icon"
-            class="ml-[11px]"
-          />
-        </div>
-      </nav>
-    </div>
-    <div
-      class="login z-[100] absolute hidden w-screen h-screen top-0 left-0 justify-center items-center"
+      class="h-[94px] border-b-[1.5px] border-[#E5E7EA] flex justify-center items-center"
     >
-      <div
-        class="bg-white dark:bg-[#272727] rounded-[20px] w-[590px] h-[483px] py-10 px-8 relative"
-      >
-        <form
-          action="#"
-          class="form flex flex-col justify-center items-center"
-        >
-          <h1 class="font-semibold text-[36px] leading-[44px]">Login</h1>
-          <p
-            class="font-normal text-[16px] leading-[24px] text-[#555555] dark:text-white mt-[10px]"
-          >
-            Use the email and password that you login
-          </p>
-          <input
-            type="email"
-            id="email"
-            placeholder="Email"
-            class="focus:ring-2 dark:bg-[#272727] focus:ring-sky-400 font-medium text-[18px] leading-[22px] w-full h-[58px] py-[18px] px-[30px] rounded-[82px] mt-8 outline-none border border-spacing-[1.5px] border-[#E5E7EA]"
-          />
-          <div class="w-full mt-4 relative">
-            <input
-              type="password"
-              id="password"
-              placeholder="Password"
-              class="focus:ring-2 dark:bg-[#272727] focus:ring-sky-400 font-medium text-[18px] leading-[22px] w-full h-[58px] py-[18px] px-[30px] rounded-[82px] outline-none border border-spacing-[1.5px] border-[#E5E7EA]"
-            />
-            <i
-              class="bx icon-eye bxs-show absolute text-lg right-[23px] top-[20px] cursor-pointer dark:text-white"
-            ></i>
-          </div>
-          <div class="text-end w-full flex justify-between">
-            <p
-              class="font-normal hidden text-[14px] leading-[17px] text-[#FF3B30] mt-[10px]"
+      <div class="container mx-auto max-w-[1240px] px-5">
+        <nav class="nav flex items-center">
+          <img src="./img/Logo.svg" alt="logo" class="cursor-pointer" />
+          <ul class="nav__list flex items-center ml-5 z-40">
+            <li
+              class="nav__list-item flex px-4 py-[18px] dark:hover:bg-[#272727] cursor-pointer hover:bg-[#F5F5F5] hover:rounded-full duration-300"
             >
-              Your password is wrong
-            </p>
-            <a href="#" class="text-end flex-grow">
-              <p
-                class="font-normal text-[14px] leading-[17px] text-[#555555] dark:text-white mt-[10px]"
+              <a
+                href="#"
+                class="text-[18px] w-full h-full leading-[22px] font-medium"
+                >Categories</a
               >
-                Forgot password
-              </p>
-            </a>
+            </li>
+            <li
+              class="nav__list-item group relative px-4 py-[18px] w-[147px] flex items-center justify-around cursor-pointer dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-full duration-300"
+            >
+              <a
+                href="#"
+                class="text-[18px] w-full h-full leading-[22px] font-medium"
+                >About Us</a
+              >
+              <i
+                class="bx bx-chevron-down text-xl group-hover:bx-chevron-up"
+              ></i>
+              <div
+                class="absolute hidden group-hover:block top-0 pt-[70px] left-0"
+              >
+                <ul
+                  class="dropdown z-20 bg-white w-[147px] p-[10px] duration-300 backdrop:blur-md dark:bg-[#1C1C1C] rounded-[20px] dark:shadow-white dark:shadow-sm"
+                >
+                  <li
+                    class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                  >
+                    <a href="#" class="w-full h-full"> News </a>
+                  </li>
+                  <li
+                    class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                  >
+                    <a href="#" class="w-full h-full"> Careers </a>
+                  </li>
+                  <li
+                    class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                  >
+                    <a href="#" class="w-full h-full"> Locations </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="nav__list-item relative group flex items-center justify-around px-4 py-[18px] cursor-pointer w-[169px] dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-full duration-300"
+            >
+              <a
+                href="#"
+                class="text-[18px] leading-[22px] font-medium w-full h-full"
+              >
+                Help center
+              </a>
+              <i class="bx bx-chevron-down text-xl"></i>
+              <div
+                class="absolute hidden group-hover:block top-0 pt-[70px] left-0"
+              >
+                <ul
+                  class="dropdown bg-white w-[169px] p-[10px] duration-300 backdrop:blur-md dark:bg-[#1C1C1C] rounded-[20px] dark:shadow-white dark:shadow-sm"
+                >
+                  <li
+                    class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                  >
+                    <a href="#" class="w-full h-full"> FAQ </a>
+                  </li>
+                  <li
+                    class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                  >
+                    <a href="#" class="w-full h-full"> Contact us </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <h1
+            class="inline-block cursor-pointer text-[18px] leading-[22px] font-semibold ml-[196px] duration-300"
+          >
+            +1 855 420 0000
+          </h1>
+          <div
+            class="mode dark:bg-[#272727] p-[21px] ml-6 bg-[#F5F5F5] dark:hover:bg-[#636161] hover:bg-[#e2dfdf] duration-300 cursor-pointer rounded-full flex justify-center items-center"
+          >
+            <img
+              id="mode-icon"
+              src="./img/Moon.svg"
+              class="w-4 h-4"
+              alt="dark-logo"
+            />
           </div>
-          <a href="#">
-            <h3 class="font-medium text-[16px] leading-[20px] mt-[26px]">
-              I want to create an account
-            </h3>
-          </a>
-          <button
-            type="submit"
-            class="mt-8 group btn bg-[#299764] cursor-pointer w-full h-[58px] rounded-full hover:bg-[#077743] active:bg-[#F5F5F5] flex justify-center items-center ml-4"
+          <div
+            id="btn-login"
+            class="group btn bg-[#299764] cursor-pointer w-[142px] h-[58px] rounded-full hover:bg-[#077743] active:bg-[#F5F5F5] flex justify-center items-center ml-4"
           >
             <h1
               class="group-active:text-black text-white inline-block text-[18px] leading-[22px] font-medium"
             >
               Login
             </h1>
-            <img
-              src="./img/icon-door.png"
-              alt="exit-icon"
-              class="ml-[11px]"
-            />
-          </button>
-        </form>
+            <img src="./img/icon-door.png" alt="exit-icon" class="ml-[11px]" />
+          </div>
+        </nav>
+      </div>
+      <div
+        class="login z-[100] absolute hidden w-screen h-screen top-0 left-0 justify-center items-center"
+      >
         <div
-          class="form_exit bg-[#F5F5F5] hover:bg-slate-200 absolute top-[24px] right-[24px] w-[58px] h-[58px] dark:bg-[#555353] dark:hover:bg-[#636161] duration-300 cursor-pointer rounded-full flex justify-center items-center"
+          class="bg-white dark:bg-[#272727] rounded-[20px] w-[590px] h-[483px] py-10 px-8 relative"
         >
-          <i class="bx bx-x"></i>
+          <form
+            action="#"
+            class="form flex flex-col justify-center items-center"
+          >
+            <h1 class="font-semibold text-[36px] leading-[44px]">Login</h1>
+            <p
+              class="font-normal text-[16px] leading-[24px] text-[#555555] dark:text-white mt-[10px]"
+            >
+              Use the email and password that you login
+            </p>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              class="focus:ring-2 dark:bg-[#272727] focus:ring-sky-400 font-medium text-[18px] leading-[22px] w-full h-[58px] py-[18px] px-[30px] rounded-[82px] mt-8 outline-none border border-spacing-[1.5px] border-[#E5E7EA]"
+            />
+            <div class="w-full mt-4 relative">
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                class="focus:ring-2 dark:bg-[#272727] focus:ring-sky-400 font-medium text-[18px] leading-[22px] w-full h-[58px] py-[18px] px-[30px] rounded-[82px] outline-none border border-spacing-[1.5px] border-[#E5E7EA]"
+              />
+              <i
+                class="bx icon-eye bxs-show absolute text-lg right-[23px] top-[20px] cursor-pointer dark:text-white"
+              ></i>
+            </div>
+            <div class="text-end w-full flex justify-between">
+              <p
+                class="font-normal hidden text-[14px] leading-[17px] text-[#FF3B30] mt-[10px]"
+              >
+                Your password is wrong
+              </p>
+              <a href="#" class="text-end flex-grow">
+                <p
+                  class="font-normal text-[14px] leading-[17px] text-[#555555] dark:text-white mt-[10px]"
+                >
+                  Forgot password
+                </p>
+              </a>
+            </div>
+            <a href="#">
+              <h3 class="font-medium text-[16px] leading-[20px] mt-[26px]">
+                I want to create an account
+              </h3>
+            </a>
+            <button
+              type="submit"
+              class="mt-8 group btn bg-[#299764] cursor-pointer w-full h-[58px] rounded-full hover:bg-[#077743] active:bg-[#F5F5F5] flex justify-center items-center ml-4"
+            >
+              <h1
+                class="group-active:text-black text-white inline-block text-[18px] leading-[22px] font-medium"
+              >
+                Login
+              </h1>
+              <img
+                src="./img/icon-door.png"
+                alt="exit-icon"
+                class="ml-[11px]"
+              />
+            </button>
+          </form>
+          <div
+            class="form_exit bg-[#F5F5F5] hover:bg-slate-200 absolute top-[24px] right-[24px] w-[58px] h-[58px] dark:bg-[#555353] dark:hover:bg-[#636161] duration-300 cursor-pointer rounded-full flex justify-center items-center"
+          >
+            <i class="bx bx-x"></i>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
     <!-- Header ended -->
 
     <!-- main  started -->
@@ -289,8 +284,7 @@
               class="text-center font-normal text-[16px] leading-[24px] mt-[10px] text-[#555555] dark:text-white w-[575px] mx-auto"
             >
               We provide our customers with the most incredible driving
-              emotions. That is why there are only world-class cars in our
-              fleet
+              emotions. That is why there are only world-class cars in our fleet
             </p>
             <div class="filter__buttons flex gap-4 justify-center items-center">
               <div
@@ -314,12 +308,16 @@
             </ul>
           </div>
           <div class="view flex justify-center items-center mb-5">
-            <button class="btn py-[18px] px-7 bg-green-600 text-white font-normal rounded-full hover:bg-green-400">View all cars</button>
+            <button
+              class="btn py-[18px] px-7 bg-green-600 text-white font-normal rounded-full hover:bg-green-400"
+            >
+              View all cars
+            </button>
           </div>
         </div>
       </section>
       <!-- choose car section finished -->
-      
+
       <!-- opinion section started -->
       <section class="opinion bg-[#EEEEEE] py-[100px] dark:bg-[#272727]">
         <div class="container mx-auto max-w-[1240px] px-5">
@@ -390,70 +388,111 @@
           <div class="wrapper__opinions mt-44">
             <h1 class="mb-9">More than 50 brands of car</h1>
             <div class="flex flex-row gap-x-16 justify-around">
-            <img src="./img/ford-logo.png" alt="ford-logo">
-            <img src="./img/nissan-logo.png" alt="nissan-logo">
-            <img src="./img/toyota-logo.png" alt="toyota-logo">
-            <img src="./img/dodge-logo.png" alt="dodge-logo">
-            <img src="./img/hyundai-logo.png" alt="hyundai-logo">
-            <img src="./img/jeep-logo.png" alt="jeep-logo">
-          </div>
+              <img src="./img/ford-logo.png" alt="ford-logo" />
+              <img src="./img/nissan-logo.png" alt="nissan-logo" />
+              <img src="./img/toyota-logo.png" alt="toyota-logo" />
+              <img src="./img/dodge-logo.png" alt="dodge-logo" />
+              <img src="./img/hyundai-logo.png" alt="hyundai-logo" />
+              <img src="./img/jeep-logo.png" alt="jeep-logo" />
+            </div>
           </div>
         </div>
       </section>
       <!-- brend-cars section finished -->
-      
-      
+
       <!-- service section started  -->
       <section class="service">
         <div class="container mx-auto max-w-[1200px]">
-            <div class="service__wrapper mt-14 mb-14">
-              <div class="service__wrapper--title w-[684px] mx-auto text-center">
-                <h1 class="text-black font-bold text-2xl">Unparalleled Service</h1>
-                <p class="mt-1">Whether you are looking for Newark Airport car rental, an insurance replacement vehicle or minivan to take on vacation Car rental has it all.</p>
-              </div>
-              <div class="services mt-10 flex flex-row gap-x-12">
-                <div class="wrapper__first flex flex-col gap-y-5">
-                  <div class="booking__service bg-[#F5F5F5]  w-[580px] hover:bg-green-500  flex flex-row justify-around px-8 py-10 rounded-2xl">
-                    <div class="text">
-                      <h1 class="w-[211px] h-[78px] font-normal text-2xl text-[#000]">Book online,pay Online</h1>
-                    <p class="w-[354px] h-[48px] text-[#555555]">Complete the booking process A-Z, with our easy online system</p>
-                    </div>
-                    <div class="photo">
-                    <img src="./img/Desktop.png" alt="desktop">
-                    </div>
+          <div class="service__wrapper mt-14 mb-14">
+            <div class="service__wrapper--title w-[684px] mx-auto text-center">
+              <h1 class="text-black font-bold text-2xl">
+                Unparalleled Service
+              </h1>
+              <p class="mt-1">
+                Whether you are looking for Newark Airport car rental, an
+                insurance replacement vehicle or minivan to take on vacation Car
+                rental has it all.
+              </p>
+            </div>
+            <div class="services mt-10 flex flex-row gap-x-12">
+              <div class="wrapper__first flex flex-col gap-y-5">
+                <div
+                  class="booking__service bg-[#F5F5F5] w-[580px] hover:bg-green-500 flex flex-row justify-around px-8 py-10 rounded-2xl"
+                >
+                  <div class="text">
+                    <h1
+                      class="w-[211px] h-[78px] font-normal text-2xl text-[#000]"
+                    >
+                      Book online,pay Online
+                    </h1>
+                    <p class="w-[354px] h-[48px] text-[#555555]">
+                      Complete the booking process A-Z, with our easy online
+                      system
+                    </p>
                   </div>
-                  <div class="unparalleled__service bg-[#F5F5F5]  w-[580px] hover:bg-green-500  flex flex-row justify-around px-8 py-10 rounded-2xl">
-                    <div class="text">
-                      <h1 class="w-[211px] h-[78px] font-normal text-2xl text-[#000]">Unparalleled customer service</h1>
-                    <p class="w-[354px] h-[48px] text-[#555555]">We're here to help. We pride ourselves in our customer service</p>
-                    </div>
-                    <div class="photo">
-                    <img src="./img/User-clock.png" alt="user__clock">
-                    </div>
+                  <div class="photo">
+                    <img src="./img/Desktop.png" alt="desktop" />
                   </div>
                 </div>
-                <div class="wrapper__second flex flex-col gap-y-5">
-                  <div class="guaranted__service bg-[#F5F5F5]  w-[580px] hover:bg-green-500  flex flex-row justify-around px-8 py-10 rounded-2xl">
-                    <div class="text">
-                      <h1 class="w-[211px] h-[78px] font-normal text-2xl text-[#000]">Guaranteed car reservation</h1>
-                    <p class="w-[354px] h-[48px] text-[#555555]">When you book with Car rental, you can be confident your car will be waiting for you</p>
-                    </div>
-                    <div class="photo">
-                    <img src="./img/Shield.png" alt="desktop">
-                    </div>
+                <div
+                  class="unparalleled__service bg-[#F5F5F5] w-[580px] hover:bg-green-500 flex flex-row justify-around px-8 py-10 rounded-2xl"
+                >
+                  <div class="text">
+                    <h1
+                      class="w-[211px] h-[78px] font-normal text-2xl text-[#000]"
+                    >
+                      Unparalleled customer service
+                    </h1>
+                    <p class="w-[354px] h-[48px] text-[#555555]">
+                      We're here to help. We pride ourselves in our customer
+                      service
+                    </p>
                   </div>
-                  <div class="wallet__service bg-[#F5F5F5]  w-[580px] hover:bg-green-500  flex flex-row justify-around px-8 py-10 rounded-2xl">
-                    <div class="text">
-                      <h1 class="w-[211px] h-[78px] font-normal text-2xl text-[#000]">No reservation or booking fees</h1>
-                    <p class="w-[354px] h-[48px] text-[#555555]">No cancellation fees if cancelled 24 hours prior to booking time</p>
-                    </div>
-                    <div class="photo">
-                    <img src="./img/Wallet.png" alt="user__clock">
-                    </div>
+                  <div class="photo">
+                    <img src="./img/User-clock.png" alt="user__clock" />
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper__second flex flex-col gap-y-5">
+                <div
+                  class="guaranted__service bg-[#F5F5F5] w-[580px] hover:bg-green-500 flex flex-row justify-around px-8 py-10 rounded-2xl"
+                >
+                  <div class="text">
+                    <h1
+                      class="w-[211px] h-[78px] font-normal text-2xl text-[#000]"
+                    >
+                      Guaranteed car reservation
+                    </h1>
+                    <p class="w-[354px] h-[48px] text-[#555555]">
+                      When you book with Car rental, you can be confident your
+                      car will be waiting for you
+                    </p>
+                  </div>
+                  <div class="photo">
+                    <img src="./img/Shield.png" alt="desktop" />
+                  </div>
+                </div>
+                <div
+                  class="wallet__service bg-[#F5F5F5] w-[580px] hover:bg-green-500 flex flex-row justify-around px-8 py-10 rounded-2xl"
+                >
+                  <div class="text">
+                    <h1
+                      class="w-[211px] h-[78px] font-normal text-2xl text-[#000]"
+                    >
+                      No reservation or booking fees
+                    </h1>
+                    <p class="w-[354px] h-[48px] text-[#555555]">
+                      No cancellation fees if cancelled 24 hours prior to
+                      booking time
+                    </p>
+                  </div>
+                  <div class="photo">
+                    <img src="./img/Wallet.png" alt="user__clock" />
                   </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </section>
       <!-- service section finished -->
@@ -461,17 +500,33 @@
       <!-- about us section started -->
       <section class="aboutus">
         <div class="container mx-auto max-w-[1200px]">
-            <div class="wrapper">
-              <div class="wrapper__info">
-                <h1 class="text-[#000000] font-normal text-3xl">Car rental keeps you safe</h1>
+          <div class="wrapper border border-spacing-2 border-black mb-52">
+            <div class="wrapper__info w-[590px] pt-10 pl-8 pb-[94px] gap-1">
+              <h1 class="text-[#000000] font-bold text-3xl">
+                Car rental keeps you safe
+              </h1>
+              <p class="text-lg">
+                The safety of our employees and renters is our number one
+                priority. In addition to being confident your vehicle is cleaned
+                and sanitized every time you rent, you can also feel confident
+                that we will take every opportunity to enhance the health and
+                safety measures currently practiced in our operations.
+              </p>
+            </div>
+            <div class="wrapper__elements">
+              <div class="cleaner bg-[#F5F5F5] w-[200px] h-[160px] flex flex-col gap-y-4 ml-8  px-3">
+                <div class="cleaner__img flex justify-end ">
+                  <img src="./img/Flask-alt.png" alt="flas-alt">
+                </div>
+                <p class="text-[#000] font-semibold text-lg">Every car is thoroughly sanitized and cleaned</p>
               </div>
             </div>
+          </div>
         </div>
       </section>
       <!-- about us section finished -->
       <!-- footer started -->
-      <footer>
-      </footer>
+      <footer></footer>
       <!-- footer finished -->
     </main>
     <!-- main section finished  -->
@@ -482,11 +537,11 @@
   <script src="./scripts/script.js"></script>
 
   <!-- swiper js -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
       navigation: {
         nextEl: ".swiper__right",
         prevEl: ".swiper__left",
@@ -505,5 +560,5 @@
         clickable: true,
       },
     });
-</script>
+  </script>
 </html>
