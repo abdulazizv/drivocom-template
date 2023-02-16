@@ -196,8 +196,108 @@ const dynamicCards = [
       fuel: "1-lit / 2.5 km",
     },
   ];
-  const card_wrapper = document.querySelector(".car__cards");
+
+const sportsCar = [
+  {
+    id: 7,
+    name: "Royse Rolls ghost",
+    type: "Full-size car",
+    img: "./img/rollse-royce.png",
+    seats: "5 Seats",
+    type_role: "Automatic",
+    fuel: "1-lit / 2.5 km",
+  },
+  {
+    id: 8,
+    name: "Mersedes s class",
+    type: "Full-size car",
+    img: "./img/mersedes c class.png",
+    seats: "5 Seats",
+    type_role: "Automatic",
+    fuel: "1-lit / 2.5 km",
+  },
+  {
+    id: 9,
+    name: "Lamborghini urus",
+    type: "Mid-size car",
+    img: "./img/lamborghini urus.png",
+    seats: "5 Seats",
+    type_role: "Automatic",
+    fuel: "1-lit / 2.5 km",
+  },
+  {
+    id: 10,
+    name: "Mercedes g63 amg",
+    type: "Mid-size SUV",
+    img: "./img/mercedes g63 amg.png",
+    seats: "5 Seats",
+    type_role: "Automatic",
+    fuel: "1-lit / 2.5 km",
+  }
+]
+
+const vanscar = [
+  {
+    id: 11,
+    name: "15-passenger Ford transit",
+    type: "Full-size car",
+    img: "./img/ford-transit.png",
+    seats: "5 Seats",
+    type_role: "Automatic",
+    fuel: "1-lit / 2.5 km",
+  },
+  {
+    id: 12,
+    name: "15-passenger Ford transit",
+    type: "Chrysler Pacifica",
+    img: "./img/chrysler.png",
+    seats: "5 Seats",
+    type_role: "Automatic",
+    fuel: "1-lit / 2.5 km",
+  },
+  {
+    id: 13,
+    name: "Chevy Silderado 4500HD",
+    type: "Mid-size car",
+    img: "./img/chevy silderado.png",
+    seats: "5 Seats",
+    type_role: "Automatic",
+    fuel: "1-lit / 2.5 km",
+  },
+  {
+    id: 14,
+    name: "12-passenger Ford transit",
+    type: "Mid-size SUV",
+    img: "./img/12-passenger-ford-transit.png",
+    seats: "5 Seats",
+    type_role: "Automatic",
+    fuel: "1-lit / 2.5 km",
+  },
+  {
+    id: 15,
+    name: "15-passenger Ford transit",
+    type: "Mid-size SUV",
+    img: "./img/15-passenger-ford-transit.png",
+    seats: "5 Seats",
+    type_role: "Automatic",
+    fuel: "1-lit / 2.5 km",
+  },
+  {
+    id: 16,
+    name: "Mercedes-Benz Sprinter",
+    type: "Mid-size SUV",
+    img: "./img/mercedes-benz-sprinter.png",
+    seats: "5 Seats",
+    type_role: "Automatic",
+    fuel: "1-lit / 2.5 km",
+  }
   
+]
+  const card_wrapper = document.querySelector(".car__cards");
+  const sportcarbutton  = document.querySelector('.sportcar');
+  const compactcar = document.querySelector('.compactcar');
+  const vanscarbutton = document.querySelector('.vanscar');
+  function dynamicCardFunction() {
   dynamicCards.forEach((item) => {
     const element = createElement(
       "div",
@@ -241,3 +341,104 @@ const dynamicCards = [
     );
     card_wrapper.append(element);
   });
+}
+dynamicCardFunction()
+
+sportcarbutton.addEventListener('click',()=>{
+  card_wrapper.innerHTML = ``
+  sportsCar.forEach((item) => {
+    const element = createElement(
+      "div",
+      "w-[387px] group h-[433px] duration-300 py-[30px] hover:text-black bg-[#F5F5F5] dark:bg-[#272727] rounded-2xl hover:bg-green-500 cursor-pointer",
+      `
+      
+      <h1 class="font-semibold text-[24px] leading-[29px] mx-6">
+      ${item.name}
+    </h1>
+    <p
+      class="font-medium text-[#555555] dark:text-white duration-300 mt-2 group-hover:text-[#555555] text-[16px] leading-[20px] mx-6"
+    >
+    ${item.type}
+    </p>
+    <img src="${item.img}" class="mt-4" alt="car" />
+    <div
+      class="grid grid-cols-2 grid-rows-2 ml-[27px] mr-[89px] gap-6"
+    >
+      <div class="flex justify-start items-center">
+        <i class="bx bxs-user"></i>
+        <span class="ml-[13px]">${item.seats}</span>
+      </div>
+      <div class="flex justify-start items-center">
+        <div
+          class="bg-[url('./img/Vector.png')] dark:bg-[url('./img/Vector.png')] duration-300 group-hover:bg-[url('./img/Vector.png')] bg-center bg-cover w-3 h-3 inline-block"
+        ></div>
+        <span class="ml-[17px]">${item.type_role}</span>
+      </div>
+      <div class="flex justify-start items-center">
+        <div
+          class="bg-[url('./img/icon.png')] dark:bg-[url('./img/icon.png')] duration-300 group-hover:bg-[url('./img/icon.png')] bg-center bg-cover w-3 h-3 inline-block"
+        ></div>
+        <span class="ml-[13px]">${'21+ Years'}</span>
+      </div>
+      <div class="flex justify-start items-center">
+        <i class="bx bxs-droplet"></i>
+        <span class="ml-[13px]">${item.fuel}</span>
+      </div>
+    </div>
+      `
+    );
+    card_wrapper.append(element);
+  });
+});
+
+compactcar.addEventListener('click',() => {
+  card_wrapper.innerHTML = ``
+  dynamicCardFunction()
+})
+
+vanscarbutton.addEventListener('click',() => {
+  card_wrapper.innerHTML = ``
+  vanscar.forEach((item) => {
+    const element = createElement(
+      "div",
+      "w-[387px] group h-[433px] duration-300 py-[30px] hover:text-black bg-[#F5F5F5] dark:bg-[#272727] rounded-2xl hover:bg-green-500 cursor-pointer",
+      `
+      
+      <h1 class="font-semibold text-[24px] leading-[29px] mx-6">
+      ${item.name}
+    </h1>
+    <p
+      class="font-medium text-[#555555] dark:text-white duration-300 mt-2 group-hover:text-[#555555] text-[16px] leading-[20px] mx-6"
+    >
+    ${item.type}
+    </p>
+    <img src="${item.img}" class="mt-4" alt="car" />
+    <div
+      class="grid grid-cols-2 grid-rows-2 ml-[27px] mr-[89px] gap-6"
+    >
+      <div class="flex justify-start items-center">
+        <i class="bx bxs-user"></i>
+        <span class="ml-[13px]">${item.seats}</span>
+      </div>
+      <div class="flex justify-start items-center">
+        <div
+          class="bg-[url('./img/Vector.png')] dark:bg-[url('./img/Vector.png')] duration-300 group-hover:bg-[url('./img/Vector.png')] bg-center bg-cover w-3 h-3 inline-block"
+        ></div>
+        <span class="ml-[17px]">${item.type_role}</span>
+      </div>
+      <div class="flex justify-start items-center">
+        <div
+          class="bg-[url('./img/icon.png')] dark:bg-[url('./img/icon.png')] duration-300 group-hover:bg-[url('./img/icon.png')] bg-center bg-cover w-3 h-3 inline-block"
+        ></div>
+        <span class="ml-[13px]">${'21+ Years'}</span>
+      </div>
+      <div class="flex justify-start items-center">
+        <i class="bx bxs-droplet"></i>
+        <span class="ml-[13px]">${item.fuel}</span>
+      </div>
+    </div>
+      `
+    );
+    card_wrapper.append(element);
+  });
+})
