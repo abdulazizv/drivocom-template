@@ -556,3 +556,14 @@ slider__left.addEventListener("click", (e) => {
   const scr = document.querySelectorAll(".scrbr-item");
   scr[count].classList.add("active-scroll");
 });
+
+
+//  to top with btn
+const mybutton = document.querySelector('#toTopBtn')
+mybutton.addEventListener("click", (e) => {
+  topFunction();
+});
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
